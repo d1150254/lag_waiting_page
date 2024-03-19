@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head> 
+    <title>test</title>
+    <style>
+        html, body {
+            height: 100%; /*外層高度100%*/
+            margin: 0;
+        }
+        .wrapper {
+            min-height: 100%; /*外層高度100%*/
+            margin-bottom: -50px; /*隨footer高度需做調整*/
+        }
+        .content{
+            padding-bottom: 50px; /*避免文字超出瀏覽器時，內容區塊不會和footer打架*/
+        }
+        .footer{
+            height: 50px; /*設定footer本身高度*/
+            background-color: red;
+            text-align: center;
+        }
+        .footer a{
+            display: inline-block;
+            margin: 0 10px;
+        }
+        .footer img{
+            width: 25px;
+            height: 25px;
+        }
+      .block{
+            max-width: 600px; /* 設置內容容器的最大寬度 */
+            margin: 50px auto; /* 將內容置中 */
+            background-color: #a19cf1;
+            padding: 20px; /*block文字離邊界的距離*/
+            border-radius: 10px; /* 設block為圓角 */
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <div class="block">
+                <h1>test</h1>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <a href="https://twitter.com" target="_blank"><img src="/imgs/twittericon.jpg" alt="Twitter"></a>
+        <a href="https://facebook.com" target="_blank"><img src="/imgs/facebookicon.png" alt="Facebook"></a>
+        <a href="https://instagram.com" target="_blank"><img src="/imgs/instagramicon.png" alt="Instagram"></a>
+    </footer>
+  </body>
